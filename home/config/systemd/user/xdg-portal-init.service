@@ -1,0 +1,9 @@
+[Unit]
+Description=Pull in graphical-session.target for xdg-desktop-portal
+Requires=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/true
+RemainAfterExit=yes
